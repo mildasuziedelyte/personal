@@ -1,0 +1,369 @@
+body{
+    background: url('../../img/view-white-crumpled-paper.jpg') no-repeat center center fixed;  
+    min-height: 100vh;
+    position: relative;
+}
+
+.cursor-dot {
+    background-color:black;
+}
+
+/* ----------------- */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-end;
+    width: 100%;
+    padding: 30px 80px 20px 80px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    /* background-color: white;
+    opacity: 0.5; */
+}
+
+    .left{
+        position:relative;
+        letter-spacing: 5px;
+    }
+
+        .dot{
+            width: 5px;
+            height: 5px;
+            background-color: black;
+            border-radius: 50%;
+            position: absolute;
+            top: 0px;
+            left: -8px;
+            animation: blink 3s infinite;
+        }
+        
+            @keyframes blink {
+                0% { opacity: 0; }
+                50% { opacity: 1; }
+                100% { opacity: 0; }
+            }
+
+        #logo{
+            font-size: 12px;
+            letter-spacing: 5px; 
+            color: black;
+            vertical-align: bottom;
+            font-weight: 600;
+        }  
+
+            nav a{
+                color: black;
+                font-size: 12px;
+                vertical-align: bottom;
+                margin-left: 20px;
+            }
+
+                #nav-about:hover,
+                .about-selected{
+                    background-image: url('../../img/scribble1.png');
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    background-position: center;
+                }
+
+                #nav-edu:hover,
+                .edu-selected{
+                    background-image: url('../../img/scribble2.png');
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    background-position: center;
+                }
+
+                #nav-exp:hover,
+                .exp-selected {
+                    background-image: url('../../img/scribble3.png');
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    background-position: center;
+                }
+
+                #nav-port:hover,
+                .port-selected {
+                    background-image: url('../../img/scribble4.png');
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    background-position: center;
+                }
+
+                #nav-cont:hover,
+                .cont-selected {
+                    background-image: url('../../img/scribble5.png');
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    background-position: center;
+                }
+
+                #linkedin{
+                    margin-bottom: 1px;
+                }
+                #linkedin:hover{
+                    color: #0e76a8;
+                }
+
+    /* ABOUT-ME START */
+
+.info-container{
+    margin: 100px 0 0 80px;
+    padding-bottom: 100px;
+    width: 800px;
+}
+
+    .info-container h2{
+        font-size: 40px;
+        margin-bottom: 40px;
+    }
+
+    .info-container p{
+        font-size: 14px;
+        margin-top: 15px;
+    }
+
+        .info-container p a{
+            font-weight: 600;
+        }
+
+        .info-container p a:hover{
+            color: #B67150;
+        }
+
+        #story{
+        font-size: 14px;
+        }
+
+        #story-button{
+            position: relative;
+            font-weight: 600;
+        }
+
+        #story-button:hover{
+            color: #B67150;
+        }
+
+        #story-arrow{
+            height: 50px;
+            position: absolute;
+            left: -135px;
+            top: 5px;
+        }
+
+        .story-hidden{
+        display: none;
+        }
+
+        .story-show{
+            display: block;
+        }
+
+        ul {
+            margin-top: 15px;
+            list-style: none; 
+            margin: 10px 10px;
+          }
+          
+          ul li::before {
+            content: "\2022";  
+            color: black; 
+            font-weight: bold; 
+            display: inline-block; 
+            width: 1em; 
+            margin-left: -1em; 
+            font-size: 10px;
+          }
+
+        li{
+            font-size: 12px;
+        }
+
+/* FOOTER START */
+
+.footer{
+    position: absolute;
+    padding: 20px 0 40px 0;
+    bottom:0px;
+    left:80px;
+    right:80px;
+}
+
+.footer a{
+    color:black;
+    font-size: 12px;
+}
+
+.icon-right{
+    float: right;
+}
+
+.icon,
+.icon-r{
+    width: 50px;
+    margin-top: 4px;
+    margin-right: 5px;
+}
+
+.icon-left:hover{
+  background-image: url('../../img/arraw2.PNG');
+  background-repeat: no-repeat;
+  background-size: 50px;
+  background-position: left;
+}
+
+.icon-r{
+  margin-left: 5px;
+  transform: rotate(180deg);   
+}
+
+  .icon-right:hover{
+      background-image: url('../../img/arraw1.PNG');
+      background-repeat: no-repeat;
+      background-size: 50px;
+      background-position: right;
+  }
+
+  /* EDUCATION START */
+
+.edu-item{
+    /* display: inline-block; */
+}
+
+.edu-item > h4{
+    display: inline-block;
+    width: 140px;
+    font-size: 12px;
+    line-height: 18px;
+    vertical-align: top;
+    font-weight: 600;
+    /* background-color: lightsalmon; */
+    padding: 10px;
+    /* margin-bottom: 10px; */
+}
+
+.item-info{
+    width: 70%;
+    /* width: calc(100% - 140%); */
+    display: inline-block;
+    vertical-align: top;
+    /* flex-grow: 8; */
+    /* background-color: aqua; */
+    padding: 10px;
+}
+
+.item-info h4{
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.item-info p{
+    font-size: 13px;
+}
+
+.edu{
+    background-color: lightsalmon;
+ 
+ }
+ 
+ .edu h4{
+    color: black;
+ }
+ 
+ .edu p{
+    color: grey;
+ }
+ 
+ .place{
+    display: inline-block;
+    float:left;
+ }
+ 
+ .year{
+    display: inline-block;
+    float:right;
+ }
+
+
+  /* PORTFOLIO START */
+
+    .skills-container{
+        display: flex;
+        /* width: 900px; */
+        justify-content: space-between;
+    }
+
+        .skills-item{
+            margin-bottom: 20px;
+            display: inline-block;
+            /* flex-grow: 1; */
+            /* flex-basis: 31%; */
+            
+        }
+
+            .skills h4{
+                    font-size: 14px;
+                    line-height: 18px;
+                    font-weight: 600;
+                    margin-bottom: 20px;
+                }
+
+
+            .langs{
+                display: flex;
+                justify-content: space-between;
+            }
+    
+                .langs img{
+                    height: 55px;
+                    /* margin-right: 20px; */
+                    /* filter: grayscale(100%); */
+                }
+
+    .portfolio{
+      margin-top: 30px;
+    }
+
+        .portfolio-container{
+            display: flex;
+            /* width: 900px; */
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+            .portfolio img{
+                height: 100px;
+                filter: grayscale(100%);
+            }
+
+            .portfolio img:hover{
+                filter:none;
+            }
+
+            #git{
+                height: 55px;
+            }
+
+
+
+
+    /* CONTACTS START */
+
+    .contacts *{
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    #ph{
+        height:13px;
+    }
+    
+    #em{
+        height:18px;
+    }
+
