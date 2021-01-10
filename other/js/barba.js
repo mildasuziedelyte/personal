@@ -1,49 +1,49 @@
 
-function pageTransition(){
-    
-    let t1 = gsap.timeline();
-
-    t1.to('ul.transition li', {duration: .5, scaleX: 1, transformOrigin: "bottom left", stagger: .2})
-    t1.to('ul.transition li', {duration: .5, scaleX: 0, transformOrigin: "bottom right", stagger: .1, delay: .1,  ease: 'power1.out'})
-}
-
-// function contentAnimation(){
+// function pageTransition(){
     
 //     let t1 = gsap.timeline();
-//     t1.from('.left', { duration: 1.5, tarsnlateY: 50, opacity: 0})
-//     t1.to('img', { clipPatch: "polygon(0 0, 100% 0, 100% 100%, 0 100%)"})
+
+//     t1.to('ul.transition li', {duration: .5, scaleX: 1, transformOrigin: "bottom left", stagger: .2})
+//     t1.to('ul.transition li', {duration: .5, scaleX: 0, transformOrigin: "bottom right", stagger: .1, delay: .1,  ease: 'power1.out'})
 // }
 
-function delay(n) {
-    n = n || 2000;
-    return new Promise(done => {
-        setTimeout(() => {
-            done();
-        }, n);
-    });
-}
+// // function contentAnimation(){
+    
+// //     let t1 = gsap.timeline();
+// //     t1.from('.left', { duration: 1.5, tarsnlateY: 50, opacity: 0})
+// //     t1.to('img', { clipPatch: "polygon(0 0, 100% 0, 100% 100%, 0 100%)"})
+// // }
 
-barba.init({
+// function delay(n) {
+//     n = n || 2000;
+//     return new Promise(done => {
+//         setTimeout(() => {
+//             done();
+//         }, n);
+//     });
+// }
 
-    sync: true, 
+// barba.init({
 
-    transitions: [{
+//     sync: true, 
 
-        async leave(data){
+//     transitions: [{
 
-            const done = this.async();
+//         async leave(data){
 
-            pageTransition();
-            await delay(1500);
-            done();
-        },
+//             const done = this.async();
 
-        // async enter(data){
-        //     contentAnimation();
-        // },
+//             pageTransition();
+//             await delay(1500);
+//             done();
+//         },
 
-        // async once(data){
-        //     contentAnimation();
-        // }
-    }]
-})
+//         // async enter(data){
+//         //     contentAnimation();
+//         // },
+
+//         // async once(data){
+//         //     contentAnimation();
+//         // }
+//     }]
+// })
