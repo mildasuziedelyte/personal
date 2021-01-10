@@ -12,9 +12,9 @@
     <!-- components -->
     <link rel="stylesheet" href="../css/cursor.css">
     <link rel="stylesheet" href="../css/noise.css">
+    <link rel="stylesheet" href="./css/barba.css">
     <!-- custom / other -->
     <link rel="stylesheet" href="./css/custom.css">
-    <!-- <link rel="stylesheet" href="./css/custom.css"> -->
     <link rel="icon" href="../img/favicon.png" type="image/gif" sizes="16x16">
 </head>
 <script type="text/javascript">
@@ -23,7 +23,16 @@
       node.classList.remove('preload-transitions');
     });
   </script>
-<body class="preload-transitions">
+<body class="preload-transitions" data-barba="wrapper">
+
+    <ul class="transition">
+        <li></li>
+        <!-- <li></li> -->
+        <!-- <li></li>
+        <li></li>
+        <li></li> -->
+    </ul>
+
     <canvas id="noise" class="noise"></canvas>
     <header>
         <div class="left">
@@ -37,8 +46,7 @@
                 <a id="nav-exp" class="nav-item" href="./experience.html">experience</a>
                 <a id="nav-port" class="nav-item" href="./skillsPortfolio.html">skills & portfolio</a>
                 <a id="nav-cont" class="nav-item" href="./contacts.html">contacts</a>
-                <a id="linkedin" href="www.linkedin.com/in/milda-suziedelyte" class="fa fa-linkedin"></a>
-
+                <a id="linkedin" href="https://www.linkedin.com/in/milda-suziedelyte" target="_blank" class="fa fa-linkedin"></a>
             </nav>
             <div class="header-sandwitch">
                 <div id="burger" class="sandwitch-icon"></div>
@@ -48,13 +56,29 @@
         </div>
     </header>
     <!-- <main class="container"> -->
-    <main class="info-container">
+    <main class="info-container" data-barba="container" data-barba-namespace="home">
             <h2>about me</h2>
-            <p>highly-motivated web development graduate looking to fill an entry-level position as a <span style="font-weight:500">front-end developer</span>. </p>
-            <p>very detail oriented and good at applying problem-solving and organizational skills fostered by working in various environments. eager to expand my skill set in advanced front development in order to help you deliver coding excellence.</p>
-            <p>I believe the best place to learn is on the job, so if I have caught your attention - let's <a href="./contacts.html">get in touch</a>.</p>
+            <p>Highly-motivated web development graduate looking to fill an entry-level position as a <span style="font-weight:500">front-end developer</span>. </p>
+            <p>Very detail oriented and good at applying problem-solving and organizational skills fostered by working in various work environments. Eager to expand my skill set in advanced front-end development in order to help you deliver coding excellence.</p>
+            <p>The best place to learn is on the job, so if I have caught your attention - let's <a href="./contacts.html">get in touch</a>.</p>
+
+            <p id="story-button" style="font-size:10px; font-weight: 400;">Press here if you want to read more hearty introduction.</p>
+
+            <div id="story" class="story-hidden"> 
+                <p>Well, everything you have read above is true, but here you can find a bit longer introduction. as you may already know my name is Milda and I am on my way to becoming front-end developer.</p>
+                <p>I have spent last six months studying the fundamentals of full-stack development at Baltic Institute of Technology. It is funny though, how the whole story of me becoming a developer have started years ago. Around the time of finishing school my parents took me to get career aptitude test done. Guess the result? Web development. Well at that time this choice looked scary both for me and my parents, but after going few different paths, now I am ready to admit that I want to be front-end developer.</p>
+                <p>I believe I have some traits that would help me:</p>
+                <ul class="traits">
+                <li>I take tasks seriously - I listen, hear and try to accomplish.</li>
+                <li>I love problem-solving and organizing, so I try to find and understand the best possible ways, I discuss and reconcile if needed. </li>
+                <li>My eyes and brain admire accuracy and I show attention to details, so apart from the fact that these 2px in the wrong place will never see the light, I enjoy writing clean code that works well.</li>
+                </ul>
+                <p>I know there is still plenty to learn and I believe the best place to do that is on the job. so if I have caught your attention, again - let's <a href="./contacts.html">get in touch</a>.
+               </p>
+            </div>
+
             <!-- <p>hi, my name is Milda and I am on my way to becoming front-end developer.</p><p>for the last six months I have been studying the fundamentals of <span style="font-weight:500">full-stack development</span> at Baltic Institute of Technology, but the whole <span id="story-button"><img id="story-arrow" class="story-hidden" src="../img/curved-arrow.png" alt="">story</span> of me becoming a developer have started years ago. Anyway, I believe I have some traits that would make me good developer:</p>
-            <ul>
+            <ul class="traits">
                 <li>I take tasks seriously - I listen, hear and try to accomplish.</li>
                 <li>I love problem-solving and organizing, so I try to find and understand the best possible ways, I discuss and reconcile if needed. </li>
                 <li>My eyes and brain admire accuracy and I show attention to details, so apart from the fact that these 2px in the wrong place will never see the light, I enjoy writing clean code that works well.</li>
@@ -73,7 +97,12 @@
     <!-- JS -->
     <script src="./js/cursor.js"></script>
     <script src="./js/main.js" type="module"></script>
-
+    
+    <!-- barba -->
+    <!-- <script src="https://unpkg.com/@barba/core"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script> -->
+    <!-- <script src="./js/barba.js"></script> -->
+    
 </body>
 
 </html>
