@@ -1,8 +1,10 @@
 import { noise } from './noise.js';
-import { aboutMe } from './aboutMe.js';
-// import { sandwich } from './header-burger.js';
+// import { aboutMe } from './aboutMe.js';
+import { burgerTransitions } from './burgerTransitions.js';
+import { headerEvents } from './header.js';
 
 noise();
-aboutMe();
-// sandwich();
+// aboutMe();
+burgerTransitions();
+headerEvents();
 
