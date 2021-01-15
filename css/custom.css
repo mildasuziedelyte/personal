@@ -1,6 +1,7 @@
 body{
    /* background-color: black; */
-   background: url('../img/marble.png') no-repeat center center fixed;  
+   /* background: url('../img/marble.png') no-repeat center center fixed;   */
+   background-color: rgb(191, 176, 155);;
 }
 
 /* #particles-js {
@@ -62,6 +63,7 @@ body{
 
 .nav a:hover{
    margin-left: 10px;
+   color: rgb(236, 79, 44);
 }
 
 #linkedin{

@@ -1,97 +1,176 @@
-            <div class="skills">
-            <h2>skills</h2>
-            <div class="skills-container">
-                <div class="skills-item progr">
-                    <h4>Programming Languages (fundamentals)</h4>
-                    <div class="langs">
-                        <img src="../img/HTML5_Logo_512.png" alt="">
-                        <img src="../img/CSS3_logo_and_wordmark.svg.png" alt="">
-                        <img src="../img/JavaScript-Logo.png" alt="">
-                        <img src="../img/1200px-Java_programming_language_logo.svg.png" alt="">
-                        <img src="../img/new-php-logo.svg" alt="">
-                    </div>
-                </div>
-                <div class="skills hard">
-                    <h4>Hard skills</h4>
-                    <ul>
-                        <li>English - Advanced C1</li>
-                        <li>Lithuanian - Mother tongue </li>
-                        <li>French, Spanish - Basics </li>
-                        <li>Driving license - category B</li>
-                    </ul>
-                 </div>
-                <div class="skills soft">
-                    <h4>Soft skills</h4>
-                    <ul>
-                        <li>Problem solving</li>
-                        <li>Organization Skills</li>
-                        <li>Communication</li>
-                        <li>Work ethics</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="portfolio">
-            <h2>portfolio</h2>
+        <div class="portfolio skills-item">
+            <h4>Portfolio</h4>
             <div class="portfolio-container">
+                <a href="https://github.com/mildasuziedelyte"><img id="git" src="../img/GitHub-Mark.png" alt=""></a>
                 <a href="https://github.com/front-end-by-rimantas/18-grupe-portfolio-elvish"><img src="../img/elvish.PNG" alt=""></a>
                 <a href="https://github.com/mildasuziedelyte/back-end_PHP/tree/master/projektas-darzas"><img src="../img/darzas.PNG" alt=""></a>
                 <a href="https://github.com/mildasuziedelyte/dodopizza.lt"><img src="../img/dodo.PNG" alt=""></a>               
-                <a href="https://github.com/mildasuziedelyte"><img id="git" src="../img/GitHub-Mark.png" alt=""></a>
             </div>
         </div>
-    
-    
-    
-    .skills-container{
+        <div class="sk-left">
+            <div class="languages skills-item">
+                <h4>Programming Languages</h4>
+                <div class="langs">
+                    <img src="../img/HTML5_Logo_512.png" alt="">
+                    <img src="../img/CSS3_logo_and_wordmark.svg.png" alt="">
+                    <img src="../img/JavaScript-Logo.png" alt="">
+                    <img src="../img/1200px-Java_programming_language_logo.svg.png" alt="">
+                    <img src="../img/new-php-logo.svg" alt="">
+                </div>
+            </div>
+            <div class="sk-bottom">
+                <div class="soft skills-item">
+                    <h4>Soft skills</h4>
+                    <p>Problem solving</p>
+                    <p>Organization Skills</p>
+                    <p>Communication</p>
+                    <p>Work ethics</p>
+                </div>
+                <div class="hard skills-item">
+                    <h4>Hard Skills</h4>
+                    <p>English - Advanced C1</p>
+                    <p>OLithuanian - Mother tongue</p>
+                    <p>French, Spanish - Basics</p>
+                    <p>Driving license - category B</p>
+                </div>                
+            </div>
+        </div>
+        
+
+                .sk-left{
+            flex-basis: 60%;
+            order:1;
+        }
+
+        .skills-item h4{
+            font-size: 18px;
+            line-height: 20px;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+
+        .languages{
+            /* background-color:lightcoral; */
+            padding-right: 100px;
+            margin-bottom: 60px;
+        }
+
+            
+    .langs{
         display: flex;
-        width: 900px;
         justify-content: space-between;
     }
 
-        .skills-item{
-            margin-bottom: 20px;
-            display: inline-block;
-            
+        .langs img{
+            height: 55px;
         }
 
-            .skills h4{
-                    font-size: 14px;
-                    line-height: 18px;
-                    font-weight: 600;
-                    margin-bottom: 20px;
-                }
+        .portfolio{
+            /* background-color:lightgreen; */
+            flex-basis: 40%;
+            order:2;
+        }
 
-
-            .langs{
-                display: flex;
-                justify-content: space-between;
-            }
-    
-                .langs img{
-                    height: 55px;
-                }
-
-    .portfolio{
-      margin-top: 30px;
-    }
 
         .portfolio-container{
             display: flex;
-            justify-content: space-between;
+            flex-direction: column;
             align-items: center;
-
         }
 
-            .portfolio img{
-                height: 100px;
-                filter: grayscale(100%);
+        #git{
+            height: 55px;
+        }
+        
+        .portfolio img{
+            height: 100px;
+            margin-bottom: 20px;
+        }
+
+        .portfolio img:hover{
+            filter: grayscale(100%);
+        }
+
+        .sk-bottom{
+            display: flex;
+        }
+
+        .soft{
+            flex-basis: 50%;
+            /* background-color:lightsteelblue; */
+        }
+
+        .hard{
+            flex-basis: 50%;
+            /* background-color:lightyellow; */
+        }
+
+                .skills-portfolio{
+            flex-direction: column;
+        }
+    
+            .sk-left{
+                flex-basis: 50%;
+            }
+    
+            .portfolio{
+                flex-basis: 50%;
+                order: 1;
+            }
+    
+            .sk-bottom{
+                /* flex-direction: column; */
+            }
+    
+            .soft{
+            }
+    
+            .hard{
+            }
+    }
+
+        @media(max-width: 500px){
+        .skills-portfolio{
+            margin: 100px 50px 0 50px;
+            width: calc(100% - 100px);
+        }
+    
+            .sk-left{
+            }
+    
+            .portfolio{
+            }
+    
+            .sk-bottom{
+                flex-direction: column;
+            }
+    
+            .soft{
+            }
+    
+            .hard{
+            }
+    }
+    @media(max-width: 500px){
+        .skills-portfolio{
+            margin: 100px 30px 0 30px;
+            width: calc(100% - 60px);
+        }
+    
+            .sk-left{
+            }
+    
+            .portfolio{
+            }
+    
+            .sk-bottom{
+                flex-direction: column;
+            }
+    
+            .soft{
+            }
+    
+            .hard{
             }
 
-            .portfolio img:hover{
-                filter:none;
-            }
-
-            #git{
-                height: 55px;
-            }
+    }

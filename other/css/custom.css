@@ -1,14 +1,13 @@
 body{
-    background: url('../../img/view-white-crumpled-paper.jpg') no-repeat center center fixed;  
+    /* background: url('../../img/view-white-crumpled-paper.jpg') no-repeat center center fixed;   */
     min-height: 100vh;
     position: relative;
+    background-color: rgb(191, 176, 155);
 }
 
 .cursor-dot {
     background-color:black;
 }
-
-/* ----------------- */
 
 header{
     display: flex;
@@ -24,7 +23,8 @@ header{
 }
 
 .scroll{
-       background-color: rgb(240, 240, 240);
+       /* background-color: rgb(240, 240, 240); */
+       background-color: rgb(191, 176, 155);
 }
 
     .left{
@@ -118,7 +118,8 @@ header{
                     nav{
                         display: none;
                         position:absolute;
-                        top: 60px;
+                        top: 30px;
+                        /* top: 60px; */
                         right: -80px;
                         width: 195px;
                         transition: all 0.5s;
@@ -126,7 +127,8 @@ header{
                         padding: 10px 80px 10px 0;
                     }
                     .nav-scroll{
-                        background-color: rgb(240, 240, 240);
+                        background-color: rgb(191, 176, 155);
+                        /* background-color: rgb(240, 240, 240); */
                     }
                     nav a{
                         display: block;
@@ -149,7 +151,7 @@ header{
                     .about-selected,
                     .edu-selected,
                     .exp-selected,
-                    .port-selectedr,
+                    .port-selected,
                     .cont-selected {
                         background-position: right;
                     }
@@ -199,7 +201,7 @@ header{
                     .about-selected,
                     .edu-selected,
                     .exp-selected,
-                    .port-selectedr,
+                    .port-selected,
                     .cont-selected {
                         background-position: left;
                     }
@@ -211,11 +213,13 @@ header{
     margin: 100px 0 0 80px;
     padding-bottom: 100px;
     width: 750px;
+    
 }
 
     .info-container h2{
         font-size: 40px;
         margin-bottom: 40px;
+        color: rgb(236, 79, 44);
     }
 
     .info-container p{
@@ -227,8 +231,10 @@ header{
             font-weight: 600;
         }
 
-        .info-container p a:hover{
-            color: #B67150;
+        .info-container p a:hover,
+        #story-button:hover{
+            /* color: #B67150; */
+            color: rgb(236, 79, 44);
         }
 
         #story{
@@ -239,10 +245,6 @@ header{
             position: relative;
             font-weight: 500;
             font-size:12px;
-        }
-
-        #story-button:hover{
-            color: #B67150;
         }
 
         #story-arrow{
@@ -460,115 +462,131 @@ header{
   /* PORTFOLIO START */
 
     .skills-portfolio{
-        display:flex;
-        margin: 100px 80px 0 80px;
+        /* background-color: white; */
+        /* display:flex; */
+        margin: 50px 80px 0 80px;
         width: calc(100% - 160px);
+        /* width: 100%; */
     }
 
+    /* .divider{
+        background-image: url('../../img/scribble2.png');
+        background-size: contain;
+        width: 100%;
+        height: 10px;
+        background-repeat: no-repeat;
+        background-position: center;
+    } */
+
         .skills-item{
-            padding: 10px 0;
-            margin-bottom: 20px;
+            padding: 30px 0px;
+            /* margin-bottom: 30px; */
+            /* background-color: white; */
+            border-bottom: 1px solid rgb(236, 79, 44);
         }
 
-        .sk-left{
-            flex-basis: 60%;
-            order:1;
+        .hard.skills-item{
+            border-bottom:none;
+        }
+
+        .skills-item h4{
+            font-size: 20px;
+            line-height: 20px;
+            font-weight: 500;
+            margin-bottom: 30px;
+            /* color:rgb(236, 79, 44); */
+            
         }
 
         .languages{
-            background-color:lightcoral;
+            /* background-color:lightcoral; */
+            /* padding-right: 100px; */
+            /* margin-bottom: 60px; */
+        }
+
+            
+    .langs{
+        width: 500px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+        .langs img{
+            height: 55px;
+            margin-bottom: 20px;
         }
 
         .portfolio{
-            background-color:lightgreen;
-            flex-basis: 40%;
-            order:2;
+            /* background-color:lightgreen; */
         }
 
-        .sk-bottom{
+
+        .portfolio-container{
             display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
 
-        .soft{
-            flex-basis: 50%;
-            background-color:lightsteelblue;
+        #git{
+            height: 55px;
+            margin: 20px 75px;
+        }
+        
+        .portfolio img{
+            height: 100px;
+            margin-right: 20px;
         }
 
-        .hard{
-            flex-basis: 50%;
-            background-color:lightyellow;
+        .portfolio img:last-child{
+            margin-right: 0px;
         }
+
+        .portfolio img:hover{
+            filter: grayscale(100%);
+        }
+
+        .skills-item p{
+            display: inline-block;
+            margin-right: 30px;
+        }
+
+
+
 
     @media(max-width: 1000px){
-        .skills-portfolio{
-            flex-direction: column;
+        .portfolio-container{
+            flex-wrap: wrap;
         }
-    
-            .sk-left{
-                flex-basis: 50%;
-            }
-    
-            .portfolio{
-                flex-basis: 50%;
-                order: 1;
-            }
-    
-            .sk-bottom{
-                /* flex-direction: column; */
-            }
-    
-            .soft{
-            }
-    
-            .hard{
-            }
+        .portfolio img{
+            margin-bottom: 20px;
+        }
+    }
+
+    @media(max-width: 650px){
+        .langs{
+            width: auto;
+            flex-wrap: wrap;
+        }
+        .portfolio-container{
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
     @media(max-width: 500px){
         .skills-portfolio{
-            margin: 100px 50px 0 50px;
+            margin: 50px 50px 0 50px;
             width: calc(100% - 100px);
         }
-    
-            .sk-left{
-            }
-    
-            .portfolio{
-            }
-    
-            .sk-bottom{
-                flex-direction: column;
-            }
-    
-            .soft{
-            }
-    
-            .hard{
-            }
     }
-    @media(max-width: 500px){
+
+    @media(max-width: 400px){
         .skills-portfolio{
-            margin: 100px 30px 0 30px;
+            margin: 50px 20px 0 30px;
             width: calc(100% - 60px);
         }
-    
-            .sk-left{
-            }
-    
-            .portfolio{
-            }
-    
-            .sk-bottom{
-                flex-direction: column;
-            }
-    
-            .soft{
-            }
-    
-            .hard{
-            }
-
     }
+
 
 
 
