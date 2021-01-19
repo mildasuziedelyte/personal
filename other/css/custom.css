@@ -62,9 +62,39 @@ header{
                 font-size: 12px;
                 vertical-align: bottom;
                 margin-left: 20px;
+                position: relative;
             }
 
-                #nav-about:hover,
+            nav .link:hover::before{
+                border-bottom: 2px solid #000;
+                /* width: 32px; */
+                content: ' ';
+                display: block;
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 20px;
+            }
+
+            .link.selected::before{
+                border-bottom: 2px solid #000;
+                /* width: 30px; */
+                content: ' ';
+                display: block;
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 20px;
+            }
+
+            #linkedin{
+                margin-bottom: 1px;
+            }
+            #linkedin:hover{
+                color: #0e76a8;
+            }
+
+                /* #nav-about:hover,
                 .about-selected{
                     background-image: url('../../img/scribble1.png');
                     background-repeat: no-repeat;
@@ -109,7 +139,7 @@ header{
                 }
                 #linkedin:hover{
                     color: #0e76a8;
-                }
+                } */
 
                 @media(max-width: 900px){
                     .right{
@@ -142,8 +172,24 @@ header{
                         display: block;
                     }
 
+                    nav .link:hover::before{
+                        border-bottom: 0px solid #000;
+                    }
+
+                    nav .link:hover{
+                        color:#ef2e31;
+                    }
+        
+                    .link.selected::before{
+                        border-bottom: 0px solid #000;
+                    }
+
+                    .link.selected{
+                        color:#ef2e31;
+                    }
+
                     
-                    #nav-about:hover,
+                    /* #nav-about:hover,
                     #nav-edu:hover,
                     #nav-exp:hover,
                     #nav-port:hover,
@@ -154,7 +200,7 @@ header{
                     .port-selected,
                     .cont-selected {
                         background-position: right;
-                    }
+                    }*/
                 }
 
                 @media(max-width: 500px){
@@ -219,7 +265,8 @@ header{
     .info-container h2{
         font-size: 40px;
         margin-bottom: 40px;
-        color: rgb(236, 79, 44);
+        color: #ef2e31;
+        /* color: rgb(236, 79, 44); */
     }
 
     .info-container p{
@@ -331,24 +378,30 @@ header{
     margin-right: 5px;
 }
 
-.icon-left:hover{
+/* .icon-left:hover{
   background-image: url('../../img/arraw2.PNG');
   background-repeat: no-repeat;
   background-size: 50px;
   background-position: left;
-}
+}*/
 
 .icon-r{
   margin-left: 5px;
   transform: rotate(180deg);   
 }
 
+.icon-left:hover,
+.icon-right:hover{
+    color: #ef2e31;
+}
+
+/*
   .icon-right:hover{
       background-image: url('../../img/arraw1.PNG');
       background-repeat: no-repeat;
       background-size: 50px;
       background-position: right;
-  }
+  } */
 
   @media(max-width: 500px){
     .footer{
@@ -485,9 +538,13 @@ header{
             border-bottom: 1px solid rgb(236, 79, 44);
         }
 
-        .hard.skills-item{
-            border-bottom:none;
+        .languages.skills-item{
+            border-top: 1px solid rgb(236, 79, 44);
         }
+
+        /* .hard.skills-item{
+            border-bottom:none;
+        } */
 
         .skills-item h4{
             font-size: 20px;
@@ -509,11 +566,16 @@ header{
         width: 500px;
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
 
         .langs img{
             height: 55px;
             margin-bottom: 20px;
+        }
+
+        #php{
+            height: 35px;
         }
 
         .portfolio{
@@ -548,6 +610,7 @@ header{
         .skills-item p{
             display: inline-block;
             margin-right: 30px;
+            margin-top: 0;
         }
 
 

@@ -4,13 +4,13 @@ body{
    background-color: rgb(191, 176, 155);;
 }
 
-/* #particles-js {
+#particles-js {
    height: 100%;
    width: 100%;
    position: absolute;
    z-index: -1;
    top: 0;
-} */
+}
 
 .introduction{
    display: inline-block;
@@ -63,7 +63,8 @@ body{
 
 .nav a:hover{
    margin-left: 10px;
-   color: rgb(236, 79, 44);
+   color: #ef2e31;
+   /* color: rgb(236, 79, 44); */
 }
 
 #linkedin{
@@ -75,8 +76,6 @@ body{
 #linkedin:hover{
    color: #0e76a8;
 }
-
-
 
 .container{
    display: inline-block;

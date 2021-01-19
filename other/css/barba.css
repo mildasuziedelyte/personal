@@ -1,4 +1,4 @@
-ul.transition{
+/* ul.transition{
     display:flex;
     position: absolute;
     z-index: 15000;;
@@ -12,8 +12,39 @@ ul.transition{
 }
 
 ul.transition li{
-    transform: scaleX(0);
+    transform: scaleY(0);
     background-color: rgb(241, 241, 241);
-    width:100%;
+    width:0.5%;
     list-style: none;
 }
+
+.li1{
+    background-color: lightblue;
+}
+.li2{
+    background-color: lightsalmon;
+}
+.li3{
+    background-color: lightgreen;
+}
+.li4{
+    background-color: lightyellow;
+}
+.li5{
+    background-color: lightseagreen;
+}
+.li6{
+    background-color: lightcoral;
+}
+.li7{
+    background-color: lightblue;
+}
+.li8{
+    background-color: lightsalmon;
+}
+.li9{
+    background-color: lightgreen;
+}
+.li10{
+    background-color: lightyellow;
+} */

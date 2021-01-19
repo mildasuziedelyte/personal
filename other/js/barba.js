@@ -3,8 +3,8 @@
     
 //     let t1 = gsap.timeline();
 
-//     t1.to('ul.transition li', {duration: .5, scaleX: 1, transformOrigin: "bottom left", stagger: .2})
-//     t1.to('ul.transition li', {duration: .5, scaleX: 0, transformOrigin: "bottom right", stagger: .1, delay: .1,  ease: 'power1.out'})
+//     t1.to('ul.transition li', {duration: .5, scaleY: 1, transformOrigin: "bottom left", stagger: .05})
+//     t1.to('ul.transition li', {duration: .5, scaleY: 0, transformOrigin: "bottom right", stagger: .1, delay: .1,  ease: 'power1.out'})
 // }
 
 // // function contentAnimation(){
@@ -47,3 +47,5 @@
 //         // }
 //     }]
 // })
+
+// pageTransition();

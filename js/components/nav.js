@@ -6,7 +6,7 @@ function nav(){
         link.addEventListener('mouseover', () => {
             link.classList.add('nav-hover');
             nav.forEach(link => {
-                link.style.opacity="0.4"
+                link.style.opacity="0.7"
             })
             link.style.opacity="1";
 
