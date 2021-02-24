@@ -2,7 +2,8 @@ body{
     /* background: url('../../img/view-white-crumpled-paper.jpg') no-repeat center center fixed;   */
     min-height: 100vh;
     position: relative;
-    background-color: rgb(191, 176, 155);
+    /* background-color: rgb(191, 176, 155); */
+    background-color: rgb(210, 207, 202);
 }
 
 .cursor-dot {
@@ -24,7 +25,8 @@ header{
 
 .scroll{
        /* background-color: rgb(240, 240, 240); */
-       background-color: rgb(191, 176, 155);
+       /* background-color: rgb(191, 176, 155); */
+       background-color:  rgb(210, 207, 202);;
 }
 
     .left{
@@ -587,6 +589,11 @@ header{
             display: flex;
             justify-content: space-between;
             align-items: center;
+            padding-bottom: 30px;
+        }
+
+        .portfolio-item{
+            background-color: lightsalmon;
         }
 
         #git{

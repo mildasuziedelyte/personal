@@ -1,7 +1,8 @@
 body{
    /* background-color: black; */
    /* background: url('../img/marble.png') no-repeat center center fixed;   */
-   background-color: rgb(191, 176, 155);;
+   /* background-color: rgb(191, 176, 155); */
+   background-color: rgb(210, 207, 202);
 }
 
 #particles-js {
