@@ -68,6 +68,11 @@ body{
    /* color: rgb(236, 79, 44); */
 }
 
+#and{
+   font-size: 40px; 
+   line-height:60px;
+}
+
 #linkedin{
    font-size: 20px;
    margin-top: 15px;
@@ -99,6 +104,11 @@ h2{
 @media(max-width: 400px){
    .nav a{
       font-size: 30px;
+   }
+   #and{
+      font-size: 30px;
+      line-height: 48px;
+
    }
 }
 
