@@ -1,8 +1,6 @@
 body{
-    /* background: url('../../img/view-white-crumpled-paper.jpg') no-repeat center center fixed;   */
     min-height: 100vh;
     position: relative;
-    /* background-color: rgb(191, 176, 155); */
     background-color: rgb(210, 207, 202);
 }
 
@@ -24,8 +22,6 @@ header{
 }
 
 .scroll{
-       /* background-color: rgb(240, 240, 240); */
-       /* background-color: rgb(191, 176, 155); */
        background-color:  rgb(210, 207, 202);;
 }
 
@@ -69,7 +65,6 @@ header{
 
             nav .link:hover::before{
                 border-bottom: 2px solid #000;
-                /* width: 32px; */
                 content: ' ';
                 display: block;
                 position: absolute;
@@ -80,7 +75,6 @@ header{
 
             .link.selected::before{
                 border-bottom: 2px solid #000;
-                /* width: 30px; */
                 content: ' ';
                 display: block;
                 position: absolute;
@@ -96,53 +90,6 @@ header{
                 color: #0e76a8;
             }
 
-                /* #nav-about:hover,
-                .about-selected{
-                    background-image: url('../../img/scribble1.png');
-                    background-repeat: no-repeat;
-                    background-size: contain;
-                    background-position: center;
-                }
-
-                #nav-edu:hover,
-                .edu-selected{
-                    background-image: url('../../img/scribble2.png');
-                    background-repeat: no-repeat;
-                    background-size: contain;
-                    background-position: center;
-                }
-
-                #nav-exp:hover,
-                .exp-selected {
-                    background-image: url('../../img/scribble3.png');
-                    background-repeat: no-repeat;
-                    background-size: contain;
-                    background-position: center;
-                }
-
-                #nav-port:hover,
-                .port-selected {
-                    background-image: url('../../img/scribble4.png');
-                    background-repeat: no-repeat;
-                    background-size: contain;
-                    background-position: center;
-                }
-
-                #nav-cont:hover,
-                .cont-selected {
-                    background-image: url('../../img/scribble5.png');
-                    background-repeat: no-repeat;
-                    background-size: contain;
-                    background-position: center;
-                }
-
-                #linkedin{
-                    margin-bottom: 1px;
-                }
-                #linkedin:hover{
-                    color: #0e76a8;
-                } */
-
                 @media(max-width: 900px){
                     .right{
                         position: relative;
@@ -151,7 +98,6 @@ header{
                         display: none;
                         position:absolute;
                         top: 30px;
-                        /* top: 60px; */
                         right: -80px;
                         width: 195px;
                         transition: all 0.5s;
@@ -160,7 +106,6 @@ header{
                     }
                     .nav-scroll{
                         background-color: rgb(191, 176, 155);
-                        /* background-color: rgb(240, 240, 240); */
                     }
                     nav a{
                         display: block;
@@ -190,19 +135,6 @@ header{
                         color:#ef2e31;
                     }
 
-                    
-                    /* #nav-about:hover,
-                    #nav-edu:hover,
-                    #nav-exp:hover,
-                    #nav-port:hover,
-                    #nav-cont:hover,
-                    .about-selected,
-                    .edu-selected,
-                    .exp-selected,
-                    .port-selected,
-                    .cont-selected {
-                        background-position: right;
-                    }*/
                 }
 
                 @media(max-width: 500px){
@@ -268,7 +200,6 @@ header{
         font-size: 40px;
         margin-bottom: 40px;
         color: #ef2e31;
-        /* color: rgb(236, 79, 44); */
     }
 
     .info-container p{
@@ -282,7 +213,6 @@ header{
 
         .info-container p a:hover,
         #story-button:hover{
-            /* color: #B67150; */
             color: rgb(236, 79, 44);
         }
 
@@ -329,7 +259,6 @@ header{
 
         .traits li{
             font-size: 14px;
-            /* font-size: 12px; */
         }
 
         @media(max-width: 900px){
@@ -380,13 +309,6 @@ header{
     margin-right: 5px;
 }
 
-/* .icon-left:hover{
-  background-image: url('../../img/arraw2.PNG');
-  background-repeat: no-repeat;
-  background-size: 50px;
-  background-position: left;
-}*/
-
 .icon-r{
   margin-left: 5px;
   transform: rotate(180deg);   
@@ -396,14 +318,6 @@ header{
 .icon-right:hover{
     color: #ef2e31;
 }
-
-/*
-  .icon-right:hover{
-      background-image: url('../../img/arraw1.PNG');
-      background-repeat: no-repeat;
-      background-size: 50px;
-      background-position: right;
-  } */
 
   @media(max-width: 500px){
     .footer{
@@ -429,31 +343,21 @@ header{
 
   /* EDUCATION START */
 
-.edu-item{
-    /* display: inline-block; */
-    /* background-color: salmon; */
-}
 
 .edu-item > h4{
     display: inline-block;
-    /* background-color: green; */
     width: 140px;
     font-size: 12px;
     line-height: 18px;
     vertical-align: top;
     font-weight: 600;
-    /* background-color: lightsalmon; */
     padding: 10px;
-    /* margin-bottom: 10px; */
 }
 
 .item-info{
     width: 70%;
-    /* width: calc(100% - 140%); */
     display: inline-block;
     vertical-align: top;
-    /* flex-grow: 8; */
-    /* background-color: aqua; */
     padding: 10px;
 }
 
@@ -467,11 +371,6 @@ header{
     font-size: 13px;
 }
 
-.edu{
-    /* background-color: lightsalmon; */
- 
- }
- 
  .edu h4{
     color: black;
  }
@@ -497,12 +396,8 @@ header{
     .edu-item > h4{
         width: 100%;
         font-size: 4;
-        /* font-weight: 700; */
         padding: 5px 10px;
     }
-    /* .item-info h4{
-        font-weight: 500;
-    } */
     .item-info{
         width: 100%;
         margin-bottom: 15px;
@@ -514,56 +409,25 @@ header{
  }
 
 
-  /* PORTFOLIO START */
+  /* SKILLS & PORTFOLIO START */
 
     .skills-portfolio{
-        /* background-color: white; */
-        /* display:flex; */
         margin: 50px 80px 0 80px;
         width: calc(100% - 160px);
-        /* width: 100%; */
     }
 
-    /* .divider{
-        background-image: url('../../img/scribble2.png');
-        background-size: contain;
-        width: 100%;
-        height: 10px;
-        background-repeat: no-repeat;
-        background-position: center;
-    } */
-
         .skills-item{
-            padding: 30px 0px;
-            /* margin-bottom: 30px; */
-            /* background-color: white; */
-            border-bottom: 1px solid rgb(236, 79, 44);
+            padding: 20px 0px;
         }
-
-        .languages.skills-item{
-            border-top: 1px solid rgb(236, 79, 44);
-        }
-
-        /* .hard.skills-item{
-            border-bottom:none;
-        } */
 
         .skills-item h4{
-            font-size: 20px;
+            font-size: 14px;
+            letter-spacing: 3px;
             line-height: 20px;
-            font-weight: 500;
-            margin-bottom: 30px;
-            /* color:rgb(236, 79, 44); */
-            
+            font-weight: 600;
+            margin-bottom: 30px;           
         }
-
-        .languages{
-            /* background-color:lightcoral; */
-            /* padding-right: 100px; */
-            /* margin-bottom: 60px; */
-        }
-
-            
+         
     .langs{
         width: 500px;
         display: flex;
@@ -580,34 +444,33 @@ header{
             height: 35px;
         }
 
-        .portfolio{
-            /* background-color:lightgreen; */
-        }
-
-
         .portfolio-container{
             display: flex;
-            justify-content: space-between;
-            align-items: center;
+            justify-content: flex start;
+            align-items: flex-start;
             padding-bottom: 30px;
+            flex-wrap: wrap;
         }
 
         .portfolio-item{
-            background-color: lightsalmon;
+            /* background-color: lightsalmon; */
+            margin-right:30px;
+            margin-bottom: 30px;
+        }
+
+        .portfolio-item:last-child{
+            margin-right: 0px;
         }
 
         #git{
-            height: 55px;
-            margin: 20px 75px;
+            width: 55px;
+            /* height: 55px; */
+            margin: 21px 73px;
         }
         
-        .portfolio img{
-            height: 100px;
-            margin-right: 20px;
-        }
-
-        .portfolio img:last-child{
-            margin-right: 0px;
+        .portfolio-item img{
+            /* height: 100px; */
+            width: 200px;
         }
 
         .portfolio img:hover{
@@ -620,15 +483,16 @@ header{
             margin-top: 0;
         }
 
+        .portfolio-item-text{
+            font-size:10px;
+            width: 200px;
+        }
 
 
 
-    @media(max-width: 1000px){
+    /* @media(max-width: 1100px){
         .portfolio-container{
             flex-wrap: wrap;
-        }
-        .portfolio img{
-            margin-bottom: 20px;
         }
     }
 
@@ -655,7 +519,7 @@ header{
             margin: 50px 20px 0 30px;
             width: calc(100% - 60px);
         }
-    }
+    } */
 
 
 
@@ -677,3 +541,9 @@ header{
         height:18px;
     }
 
+
+
+/* Iškirpti nuotrauką Paint.net
+1) magic wand (fonas)
+2) ctrl + i
+3) ctrl + shift + x */
